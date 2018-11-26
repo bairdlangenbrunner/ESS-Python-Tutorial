@@ -1,7 +1,10 @@
-# added by baird
-################
+# added by baird #
+##################
 .ipynb_checkpoints/
-~*.pptx
+
+# powerpoint temporary files #
+##############################
+~$*.ppt*
 
 # Compiled source #
 ###################
