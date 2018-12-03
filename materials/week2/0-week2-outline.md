@@ -21,6 +21,16 @@
 
 ---
 
+# How can I teach some of this to myself?
+
+The [Software Carpentry](https://software-carpentry.org/lessons/) and [Data Carpentry](https://datacarpentry.org/lessons/) lessons are a fantastic resource.
+
+* [**Plotting and Programming in Python**](http://swcarpentry.github.io/python-novice-gapminder/)
+* [**Python for Atmosphere and Ocean Scientists**](https://carpentrieslab.github.io/python-aos-lesson/)
+* [**Geospatial Data Workshop**](https://datacarpentry.org/geospatial-workshop/)
+
+---
+
 # How can I look at what I have installed in Anaconda?
 
 You can use `conda list` from your terminal shell, which will list all of the packages you've installed.
@@ -29,12 +39,21 @@ You can also click on the environment of interest in the Anaconda Navigator; the
 
 ---
 
-# Today (week 2):  Opening Python, Jupyter Notebooks, and some very basic code
+# Can I install R or Julia?
+
+Yes!  You can create a conda environment that lets you run a lot of languages.
+* Install Julia by creating a new environment (called `julia`) and then installing the language from the conda-forge channel.  The command below does all this in one line:  
+`conda create -n julia -c conda-forge julia`
+* See [here](https://docs.anaconda.com/anaconda/user-guide/tasks/use-r-language/) for installing R.
+
+---
+
+# Today (week 2):  Jupyter Notebook, basic coding practice, and adding new libraries to Anaconda
 
 **By the end of today, you'll be able to:**
 1. Open a Jupyter Notebook
 
-2. Mess around with some code
+2. Practice code
 
 3. Install extra libraries in Anaconda
   * `xarray`
