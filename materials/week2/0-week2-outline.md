@@ -56,5 +56,5 @@ Yes!  You can create a conda environment that lets you run a lot of languages.
 2. Practice code
 
 3. Install extra libraries in Anaconda
-  * `xarray`
+  * `xarray` and `netcdf4`
   * `cartopy`
