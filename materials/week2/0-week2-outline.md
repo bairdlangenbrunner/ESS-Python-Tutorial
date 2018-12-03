@@ -11,8 +11,8 @@
   * install via:  `conda install pandas` *(already on Anaconda)*
 * ...open a NetCDF file?
   * use [**xarray**](http://xarray.pydata.org/en/stable/)
-  * install via:  `conda install xarray`
-* ...plot geographical maps with data on them?
+  * install via:  `conda install xarray netcdf4` *(needs the NetCDF4 library, too)*
+* ...plot maps (and overlay data)?
   * use [**cartopy**](https://scitools.org.uk/cartopy/docs/latest/)
   * install via:  `conda install -c conda-forge cartopy`
 * ...use shapefiles to plot physical or cultural boundaries?
@@ -31,9 +31,9 @@ The [Software Carpentry](https://software-carpentry.org/lessons/) and [Data Carp
 
 ---
 
-# How can I look at what I have installed in Anaconda?
+# How can I list the contents of my Anaconda installation?
 
-You can use `conda list` from your terminal shell, which will list all of the packages you've installed.
+You can use `conda list` from your terminal shell, which will list all of the packages you've installed in the active environment.
 
 You can also click on the environment of interest in the Anaconda Navigator; the list will be there.
 
@@ -50,7 +50,7 @@ Yes!  You can create a conda environment that lets you run a lot of languages.
 
 # Today (week 2):  Jupyter Notebook, basic coding practice, and adding new libraries to Anaconda
 
-**By the end of today, you'll be able to:**
+**By the end of today, you'll (hopefully) be able to:**
 1. Open a Jupyter Notebook
 
 2. Practice code
@@ -62,6 +62,7 @@ Yes!  You can create a conda environment that lets you run a lot of languages.
 ## Start by cloning the repository to your local machine.
 
 #### If you have bash:
+
 1. Open a terminal shell
 
 2. Navigate to a place you'd like this repository to live:  
@@ -73,7 +74,8 @@ or
 3. Clone the GitHub repository:  
 ```git clone https://github.com/bairdlangenbrunner/ESS-Python-Tutorial```
 
-#### If you're less familiar with terminals/bash:
+#### If you're less familiar with terminal/bash:
+
 1. Navigate to [https://github.com/bairdlangenbrunner/ESS-Python-Tutorial](https://github.com/bairdlangenbrunner/ESS-Python-Tutorial)
 
 2. Click the green button to `Clone or download` (choose Download ZIP)
