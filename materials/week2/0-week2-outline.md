@@ -58,3 +58,24 @@ Yes!  You can create a conda environment that lets you run a lot of languages.
 3. Install extra libraries in Anaconda
   * `xarray` and `netcdf4`
   * `cartopy`
+
+## Start by cloning the repository to your local machine.
+
+#### If you have bash:
+1. Open a terminal shell
+
+2. Navigate to a place you'd like this repository to live:  
+```cd ~/Desktop```  
+or  
+```cd ~/Downloads```  
+... etc.
+
+3. Clone the GitHub repository:  
+```git clone https://github.com/bairdlangenbrunner/ESS-Python-Tutorial```
+
+#### If you're less familiar with terminals/bash:
+1. Navigate to [https://github.com/bairdlangenbrunner/ESS-Python-Tutorial](https://github.com/bairdlangenbrunner/ESS-Python-Tutorial)
+
+2. Click the green button to `Clone or download` (choose Download ZIP)
+
+3. Move that .zip file somewhere accessible on your computer, and double click to unzip it
