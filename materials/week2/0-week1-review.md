@@ -4,16 +4,16 @@
 
 <img src="./guido.jpg" width="30%">
 
-1. Good places to start learning Python include:
+1. **Good places to start learning Python include:**
     * The official [Python tutorial][python tutorial link] for a quick start guide.
     * If you're a __MATLAB__ user, the [Numpy for MATLAB users][numpy for matlab link] documentation.
     * ... and if you're a language stickler, check out the [Python style guide][pep 8 link].
 
 
-2. We recommend installing Python 3.x, as Python 2.7 is [no longer being updated][python 2 vs 3 link].
+2. **We recommend installing Python 3.x, as Python 2.7 is [no longer being updated][python 2 vs 3 link].**
 
 
-3. We installed a Python 3.x distribution by way of [Anaconda][anaconda link].
+3. **We installed a Python 3.x distribution by way of [Anaconda][anaconda link].**
     * One of the most useful aspects of Anaconda is [`conda`][conda link].
         * `conda` is an open source package manager that keeps all Python dependencies in check
         * Maybe the best part:  It doesn't require root permission to install, so you can always have a trustworthy Python installation on a remote machine
@@ -21,14 +21,14 @@
     * __REMINDER__: To open a regular Python session, type `python` on the command line of a terminal shell, or launch the Anaconda Navigator application that is installed with Anaconda.
 
 
-4. We learned how to create a git repository.
+4. **We learned how to create a git repository.**
     * Review the materials [here](https://github.com/bairdlangenbrunner/ESS-Python-Tutorial/tree/master/materials/week1).
-    * One application:  clone this repository by typing:
+    * One application:  clone this repository by typing the following into your local directory of choice:
 
 ```git clone https://github.com/bairdlangenbrunner/ESS-Python-Tutorial```
 
 
-5. We opened our first [Jupyter Notebook][what is jupyter notebook link].  To do this, type `jupyter notebook` on the command line.  It will pop up in your default web browser.
+5. **We opened our first [Jupyter Notebook][what is jupyter notebook link].  To do this, type `jupyter notebook` on the command line.  It will pop up in your default web browser.**
     * You can also open it using the Anaconda Navigator app that comes installed with Anaconda.  Click on the Jupyter Notebook "launch" link.
     * Finally, remember you can also run Python from a terminal by simply typing `python`, or using [Interactive Python][interactive python link] by typing `ipython` on the command line.  Quit a Python session by typing `exit()` and hitting `enter/return`.
 
