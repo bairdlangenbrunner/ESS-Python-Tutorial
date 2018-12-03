@@ -18,8 +18,6 @@
         * `conda` is an open source package manager that keeps all Python dependencies in check
         * Maybe the best part:  It doesn't require root permission to install, so you can always have a trustworthy Python installation on a remote machine
         * Check out the [conda cheatsheet][conda cheatsheet link] to get familiar with it
-    * __REMINDER__: To open a regular Python session, type `python` on the command line of a terminal shell, or launch the Anaconda Navigator application that is installed with Anaconda.
-
 
 4. **We learned how to create a git repository.**
     * Review the materials [here](https://github.com/bairdlangenbrunner/ESS-Python-Tutorial/tree/master/materials/week1).
@@ -30,10 +28,7 @@
 
 5. **We opened our first [Jupyter Notebook][what is jupyter notebook link].  To do this, type `jupyter notebook` on the command line.  It will pop up in your default web browser.**
     * You can also open it using the Anaconda Navigator app that comes installed with Anaconda.  Click on the Jupyter Notebook "launch" link.
-    * Finally, remember you can also run Python from a terminal by simply typing `python`, or using [Interactive Python][interactive python link] by typing `ipython` on the command line.  Quit a Python session by typing `exit()` and hitting `enter/return`.
-
-From here, you can navigate to the directory where you want to run the notebook.  In the case of this tutorial, that might be `Desktop > ESS-Python-Tutorial`.
-
+    * Finally, remember you can also run Python from a terminal by simply typing `python`, or using [Interactive Python][interactive python link] by typing `ipython` on the command line.  Quit a Python session by typing `exit()` and hitting `enter/return`.  
 
 [python tutorial link]: https://docs.python.org/3/tutorial/
 
