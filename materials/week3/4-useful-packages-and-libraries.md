@@ -8,8 +8,9 @@
   * Also great for handling dates
 * __cartopy:__ cartographic library for python, ```import cartopy```
 * __xarray:__ coordinate-referenced data set library (i.e., NetCDF tool), ```import xarray```
-  * Kind of like pandas on steroids
-  * Stephan will cover __xarray__ in much more detail in week 4
+  * pandas for NetCDF data
+* __geopandas and shapely:__ for shapefiles and dealing with data projections
+  * pandas for polygons/shapefiles
 
 __If you try to import a library that is not recognized:__
 1. Check the spelling and case of the LeTtErS
