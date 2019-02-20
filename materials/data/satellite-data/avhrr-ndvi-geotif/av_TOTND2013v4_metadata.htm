@@ -1,0 +1,806 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <title>Conterminous United States 2013 AVHRR Remote Sensing Phenology Metrics - Time Integrated Normalized Difference Vegetation Index (TIN)</title>
+  <link rel="schema.dc" href="http://purl.org/metadata/dublin_core"/>
+  <meta name="dc.title" content="Conterminous United States 2013 AVHRR Remote Sensing Phenology Metrics - Time Integrated Normalized Difference Vegetation Index (TIN) "/>
+  <meta name="dc.creator" content="U.S. Geological Survey "/>
+  <meta name="dc.subject" content="Vegetation Phenology Advanced Very High Resolution Radiometer (AVHRR) Drought Time Integrated NDVI "/>
+  <meta name="dc.description" content="Phenological dynamics of terrestrial ecosystems reflect the response of the Earth's vegetation canopy to changes in climate and hydrology and are thus important to monitor operationally. Researchers at the U.S. Geological Survey (USGS), Earth Resources Observation and Science (EROS) Center have developed methods for documenting the seasonal dynamics of vegetation in an operational fashion from satellite time-series data.  The phenological metrics data produced at USGS EROS provide indicators of key phenological events for the conterminous United States on a yearly basis from 1989 to present. As the objective is to monitor the phenological dynamics of the vegetation canopy across large areas rather than specific plants over limited space, the use of satellite imagery provides the basis to measure large scale change at the ecosystem level. National Oceanic and Atmospheric Administration's (NOAA) Advanced Very High Resolution Radiometer (AVHRR) sensor time series data are the source for this USGS phenological database. The readily available and consistently processed AVHRR Normalized Difference Vegetation Index (NDVI) data (also known as the USGS Greenness Data) are the key input for the phenological metrics data (Eidenshink 2006).  The NDVI is affected by a number of phenomena including cloud contamination, atmospheric perturbations, variable viewing geometry of the sensor, and incomplete calibration of the AVHRR sensor; all of which usually reduce the NDVI value. To minimize these effects on the NDVI value and at the same time to maximize the total number of observations per year, weekly composites of maximum NDVI value were used. However, composited data may still show lingering effects that tend to reduce the NDVI value and, more importantly, disturb the temporal profile of the vegetation signal. Spikes (mostly downward) are common phenomena in time-series NDVI data. These abrupt shifts in NDVI are frequently too short-lived to be a function of a real change in vegetation condition and can affect algorithms that are searching for increasing or decreasing trends representing real phenological shifts. Therefore, a temporal smoothing of the time series data is performed to reduce or eliminate spurious data spikes. For the purpose of extracting phenological metrics, a method of temporal smoothing of NDVI data was adopted that does not over-generalize the time-series profile, but eliminates spurious spikes in the NDVI while retaining sustained changes in NDVI that are representative of vegetation phenological dynamics.  The weighted least-square approach for temporal smoothing (Swets et. al., 1999) was adopted for the conterminous U.S. NDVI time series to eliminate anomalously low vegetation index values and reduce time shifts caused by overgeneralization of the NDVI signal. This approach uses a moving temporal window to calculate a family of regression lines that are associated with each observation; the family of lines is then averaged at each point and interpolated between points to provide a continuous temporal NDVI signal. While interpolating values between points, a weighting factor is applied that favors peak (high value) points over valley points. The smoothed NDVI data were subsequently ingested into a model developed in the Interactive Data Language (IDL) to quantify specific phenological events (see 1 - 9 below).  The complete set of phenological metrics are as follows: 1. Start of Season Time (SOST): starting time of the onset of the growing season (in day of the year).  2. Start of Season NDVI (SOSN): NDVI value at the starting time of the onset of the growing season (unitless- based on NDVI units).  3. End of Season Time (EOST): ending time of the growing season (in day of the year).   4. End of Season NDVI (EOSN): NDVI value at the ending time of the growing season (unitless-based on NDVI units). 5. Maximum Time (MAXT): the day of the year when the NDVI reaches its maximum during the growing season (in day of the year).    6. Maximum NDVI (MAXN): the highest (or peak) value in NDVI observed in a growing season (unitless-based on NDVI units).  7. Duration (DUR): the length of the growing season-the time between the start of season and end of season (in number of days). 8. Amplitude (AMP): the difference between the Maximum NDVI and NDVI at the day of start of season (unitless-based on NDVI units).  9. Time Integrated NDVI (TIN): the cumulative value of NDVI from the start to the end of the growing season (unitless-based on accumulated NDVI units).  10. No season mask: very low NDVI seasonal variability (binary).      For details about the algorithms and the data scaling for each of these seasonal phenological metrics, refer to the data creation process section of this metadata.  References:  Eidenshink , J. C., 2006, &quot;A 16-year Time Series of 1 km AVHRR Satellite Data of the Conterminous United States and Alaska,&quot; Photogrammetric Engineering &amp; Remote Sensing, 72:1027-1035.  Swets, D. L., Reed, B. C., Rowland, J. R., and S. E. Marko, 1999, &quot;A Weighted Least-squares Approach to Temporal Smoothing of NDVI,&quot;  In Proceedings of the 1999 ASPRS Annual Conference, from Image to Information, Portland, Oregon, May 17-21, 1999, Bethesda, Maryland, American Society for Photogrammetry and Remote Sensing, CD-ROM, 1 disc. "/>
+  <meta name="dc.publisher" content="U.S. Geological Survey"/>
+  <meta name="dc.contributor" content="U.S. Geological Survey, Earth Resources Observation and Science Center "/>
+  <meta name="dc.date" content="201408"/>
+  <meta name="dc.type" content="data.raster digital data"/>
+  <meta name="dc.format" content="Standard ENVI Format"/>
+  <meta name="dc.identifier" content="http://phenology.cr.usgs.gov"/>
+  <meta name="dc.source" content="Downloadable Data"/>
+  <meta name="dc.lang" content="en"/>
+  <meta name="dc.coverage.x.min" scheme="DD" content="-128.530059"/>
+  <meta name="dc.coverage.x.max" scheme="DD" content="-65.394649"/>
+  <meta name="dc.coverage.y.min" scheme="DD" content="22.479392"/>
+  <meta name="dc.coverage.y.max" scheme="DD" content="51.771338"/>
+  <meta name="dc.coverage.placeName" content="Conterminous U.S."/>
+  <meta name="dc.coverage.t.min" content="20130101T00 hrs"/>
+  <meta name="dc.coverage.t.max" content="20131230T24 hrs"/>
+  <meta name="dc.rights" content="Access constraints: Any downloading and use of these data signifies a user's agreement to comprehension and compliance of the USGS Standard Disclaimer.  Insure all portions of metadata are read and clearly understood before using these data in order to protect both user and USGS interests.; Use constraints: There is no guarantee of warranty concerning the accuracy of the data.  Users should be aware that temporal changes may have occurred since this data set was collected and that some parts of this data may no longer represent actual surface conditions.  Users should not use this data for critical applications without a full awareness of its limitations.  Acknowledgement of the originating agencies would be appreciated in products derived from these data.  Any user who modifies the data is obligated to describe the types of modifications they perform.  User specifically agrees not to misrepresent the data, nor to imply that changes made were approved or endorsed by the U.S. Geological Survey.  Please refer to http://www.usgs.gov/privacy.html for the USGS disclaimer."/>
+  <meta name="generated-from" content="e:\schrader\tmp\1\export0.xml"/>
+</head>
+<body>
+<h1>Conterminous United States 2013 AVHRR Remote Sensing Phenology Metrics - Time Integrated Normalized Difference Vegetation Index (TIN)</h1>
+Metadata also available as<p>
+<h1>Metadata:</h1>
+<ul>
+<li><a href="#1">Identification_Information</a></li>
+<li><a href="#2">Data_Quality_Information</a></li>
+<li><a href="#3">Spatial_Data_Organization_Information</a></li>
+<li><a href="#4">Spatial_Reference_Information</a></li>
+<li><a href="#5">Entity_and_Attribute_Information</a></li>
+<li><a href="#6">Distribution_Information</a></li>
+<li><a href="#7">Metadata_Reference_Information</a></li>
+</ul>
+<a name="1">
+</a>
+<hr/>
+<dl>
+<dt><em>Identification_Information:</em>  
+<dd>
+<dl>
+<dt><em>Citation:</em>  
+<dd>
+<dl>
+<dt><em>Citation_Information:</em>  
+<dd>
+<dl>
+<dt><em>Originator:</em>  U.S. Geological Survey</dt>
+<dt><em>Publication_Date:</em>  201408</dt>
+<dt><em>Title:</em>  
+<dd>
+
+Conterminous United States 2013 AVHRR Remote Sensing Phenology Metrics - Time Integrated Normalized Difference Vegetation Index (TIN)
+
+</dd>
+<dt><em>Geospatial_Data_Presentation_Form:</em>  raster digital data</dt>
+<dt><em>Series_Information:</em>  
+<dd>
+<dl>
+<dt><em>Series_Name:</em>  Time Integrated NDVI (TIN)</dt>
+<dt><em>Issue_Identification:</em>  Version 4</dt>
+</dl>
+</dd>
+<dt><em>Publication_Information:</em>  
+<dd>
+<dl>
+<dt><em>Publication_Place:</em>  Sioux Falls, SD</dt>
+<dt><em>Publisher:</em>  U.S. Geological Survey</dt>
+</dl>
+</dd>
+<dt><em>Online_Linkage:</em>  <a href="http://phenology.cr.usgs.gov">&lt;http://phenology.cr.usgs.gov&gt;</a></dt>
+<dt><em>Online_Linkage:</em>  <a href="http://earthexplorer.usgs.gov">&lt;http://earthexplorer.usgs.gov&gt;</a></dt>
+</dl>
+</dd>
+</dl>
+</dd>
+<dt><em>Description:</em>  
+<dd>
+<dl>
+<dt><em>Abstract:</em>  
+<dd>
+
+Phenological dynamics of terrestrial ecosystems reflect the response of the Earth's vegetation canopy to changes in climate and hydrology and are thus important to monitor operationally. Researchers at the U.S. Geological Survey (USGS), Earth Resources Observation and Science (EROS) Center have developed methods for documenting the seasonal dynamics of vegetation in an operational fashion from satellite time-series data. 
+<br/>
+The phenological metrics data produced at USGS EROS provide indicators of key phenological events for the conterminous United States on a yearly basis from 1989 to present. As the objective is to monitor the phenological dynamics of the vegetation canopy across large areas rather than specific plants over limited space, the use of satellite imagery provides the basis to measure large scale change at the ecosystem level. National Oceanic and Atmospheric Administration's (NOAA) Advanced Very High Resolution Radiometer (AVHRR) sensor time series data are the source for this USGS phenological database. The readily available and consistently processed AVHRR Normalized Difference Vegetation Index (NDVI) data (also known as the USGS Greenness Data) are the key input for the phenological metrics data (Eidenshink 2006). 
+<br/>
+The NDVI is affected by a number of phenomena including cloud contamination, atmospheric perturbations, variable viewing geometry of the sensor, and incomplete calibration of the AVHRR sensor; all of which usually reduce the NDVI value. To minimize these effects on the NDVI value and at the same time to maximize the total number of observations per year, weekly composites of maximum NDVI value were used. However, composited data may still show lingering effects that tend to reduce the NDVI value and, more importantly, disturb the temporal profile of the vegetation signal. Spikes (mostly downward) are common phenomena in time-series NDVI data. These abrupt shifts in NDVI are frequently too short-lived to be a function of a real change in vegetation condition and can affect algorithms that are searching for increasing or decreasing trends representing real phenological shifts. Therefore, a temporal smoothing of the time series data is performed to reduce or eliminate spurious data spikes. For the purpose of extracting phenological metrics, a method of temporal smoothing of NDVI data was adopted that does not over-generalize the time-series profile, but eliminates spurious spikes in the NDVI while retaining sustained changes in NDVI that are representative of vegetation phenological dynamics. 
+<br/>
+The weighted least-square approach for temporal smoothing (Swets et. al., 1999) was adopted for the conterminous U.S. NDVI time series to eliminate anomalously low vegetation index values and reduce time shifts caused by overgeneralization of the NDVI signal. This approach uses a moving temporal window to calculate a family of regression lines that are associated with each observation; the family of lines is then averaged at each point and interpolated between points to provide a continuous temporal NDVI signal. While interpolating values between points, a weighting factor is applied that favors peak (high value) points over valley points. The smoothed NDVI data were subsequently ingested into a model developed in the Interactive Data Language (IDL) to quantify specific phenological events (see 1 - 9 below).  The complete set of phenological metrics are as follows:
+<br/>
+<br/>
+1. Start of Season Time (SOST): starting time of the onset of the growing season (in day of the year). 
+<br/>
+2. Start of Season NDVI (SOSN): NDVI value at the starting time of the onset of the growing season (unitless- based on NDVI units). 
+<br/>
+3. End of Season Time (EOST): ending time of the growing season (in day of the year).  
+<br/>
+4. End of Season NDVI (EOSN): NDVI value at the ending time of the growing season (unitless-based on NDVI units).
+<br/>
+5. Maximum Time (MAXT): the day of the year when the NDVI reaches its maximum during the growing season (in day of the year).
+  
+6. Maximum NDVI (MAXN): the highest (or peak) value in NDVI observed in a growing season (unitless-based on NDVI units). 
+<br/>
+7. Duration (DUR): the length of the growing season-the time between the start of season and end of season (in number of days).
+<br/>
+8. Amplitude (AMP): the difference between the Maximum NDVI and NDVI at the day of start of season (unitless-based on NDVI units). 
+<br/>
+9. Time Integrated NDVI (TIN): the cumulative value of NDVI from the start to the end of the growing season (unitless-based on accumulated NDVI units). 
+<br/>
+10. No season mask: very low NDVI seasonal variability (binary).     
+<br/>
+For details about the algorithms and the data scaling for each of these seasonal phenological metrics, refer to the data creation process section of this metadata. 
+<br/>
+References: 
+<br/>
+Eidenshink , J. C., 2006, &quot;A 16-year Time Series of 1 km AVHRR Satellite Data of the Conterminous United States and Alaska,&quot; Photogrammetric Engineering &amp; Remote Sensing, 72:1027-1035. 
+<br/>
+Swets, D. L., Reed, B. C., Rowland, J. R., and S. E. Marko, 1999, &quot;A Weighted Least-squares Approach to Temporal Smoothing of NDVI,&quot;  In Proceedings of the 1999 ASPRS Annual Conference, from Image to Information, Portland, Oregon, May 17-21, 1999, Bethesda, Maryland, American Society for Photogrammetry and Remote Sensing, CD-ROM, 1 disc.
+
+</dd>
+<dt><em>Purpose:</em>  
+<dd>
+
+The goal of this project is to provide USGS and other researchers with complete and consistent public domain information on the vegetation phenology across the conterminous U.S.
+
+</dd>
+</dl>
+</dd>
+<dt><em>Time_Period_of_Content:</em>  
+<dd>
+<dl>
+<dt><em>Time_Period_Information:</em>  
+<dd>
+<dl>
+<dt><em>Range_of_Dates/Times:</em>  
+<dd>
+<dl>
+<dt><em>Beginning_Date:</em>  20130101</dt>
+<dt><em>Beginning_Time:</em>  00 hrs</dt>
+<dt><em>Ending_Date:</em>  20131230</dt>
+<dt><em>Ending_Time:</em>  24 hrs</dt>
+</dl>
+</dd>
+</dl>
+</dd>
+<dt><em>Currentness_Reference:</em>  ground condition</dt>
+</dl>
+</dd>
+<dt><em>Status:</em>  
+<dd>
+<dl>
+<dt><em>Progress:</em>  Complete</dt>
+<dt><em>Maintenance_and_Update_Frequency:</em>  
+<dd>
+
+Every year, synchronized with the update of AVHRR NDVI data and contingent upon availability of funding.
+
+</dd>
+</dl>
+</dd>
+<dt><em>Spatial_Domain:</em>  
+<dd>
+<dl>
+<dt><em>Bounding_Coordinates:</em>  
+<dd>
+<dl>
+<dt><em>West_Bounding_Coordinate:</em>  -128.530059</dt>
+<dt><em>East_Bounding_Coordinate:</em>  -65.394649</dt>
+<dt><em>North_Bounding_Coordinate:</em>  51.771338</dt>
+<dt><em>South_Bounding_Coordinate:</em>  22.479392</dt>
+</dl>
+</dd>
+</dl>
+</dd>
+<dt><em>Keywords:</em>  
+<dd>
+<dl>
+<dt><em>Theme:</em>  
+<dd>
+<dl>
+<dt><em>Theme_Keyword_Thesaurus:</em>  None</dt>
+<dt><em>Theme_Keyword:</em>  Vegetation Phenology</dt>
+<dt><em>Theme_Keyword:</em>  Advanced Very High Resolution Radiometer (AVHRR)</dt>
+<dt><em>Theme_Keyword:</em>  Drought</dt>
+<dt><em>Theme_Keyword:</em>  Time Integrated NDVI</dt>
+</dl>
+</dd>
+<dt><em>Place:</em>  
+<dd>
+<dl>
+<dt><em>Place_Keyword_Thesaurus:</em>  None</dt>
+<dt><em>Place_Keyword:</em>  Conterminous U.S.</dt>
+</dl>
+</dd>
+</dl>
+</dd>
+<dt><em>Access_Constraints:</em>  
+<dd>
+
+Any downloading and use of these data signifies a user's agreement to comprehension and compliance of the USGS Standard Disclaimer.  Insure all portions of metadata are read and clearly understood before using these data in order to protect both user and USGS interests.
+
+</dd>
+<dt><em>Use_Constraints:</em>  
+<dd>
+
+There is no guarantee of warranty concerning the accuracy of the data.  Users should be aware that temporal changes may have occurred since this data set was collected and that some parts of this data may no longer represent actual surface conditions.  Users should not use this data for critical applications without a full awareness of its limitations.  Acknowledgement of the originating agencies would be appreciated in products derived from these data.  Any user who modifies the data is obligated to describe the types of modifications they perform.  User specifically agrees not to misrepresent the data, nor to imply that changes made were approved or endorsed by the U.S. Geological Survey.  Please refer to <a href="http://www.usgs.gov/privacy.html">&lt;http://www.usgs.gov/privacy.html&gt;</a> for the USGS disclaimer.
+
+</dd>
+<dt><em>Point_of_Contact:</em>  
+<dd>
+<dl>
+<dt><em>Contact_Information:</em>  
+<dd>
+<dl>
+<dt><em>Contact_Organization_Primary:</em>  
+<dd>
+<dl>
+<dt><em>Contact_Organization:</em>  U.S. Geological Survey</dt>
+<dt><em>Contact_Person:</em>  Customer Services Representative</dt>
+</dl>
+</dd>
+<dt><em>Contact_Position:</em>  Customer Services Representative</dt>
+<dt><em>Contact_Address:</em>  
+<dd>
+<dl>
+<dt><em>Address_Type:</em>  mailing and physical address</dt>
+<dt><em>Address:</em>  USGS Earth Resources, Observation &amp; Science Center</dt>
+<dt><em>Address:</em>  47914 252nd Street</dt>
+<dt><em>City:</em>  Sioux Falls</dt>
+<dt><em>State_or_Province:</em>  SD</dt>
+<dt><em>Postal_Code:</em>  57198-0001</dt>
+<dt><em>Country:</em>  USA</dt>
+</dl>
+</dd>
+<dt><em>Contact_Voice_Telephone:</em>  605/594-6151</dt>
+<dt><em>Contact_TDD/TTY_Telephone:</em>  605/594-6933</dt>
+<dt><em>Contact_Facsimile_Telephone:</em>  605/594-6589</dt>
+<dt><em>Contact_Electronic_Mail_Address:</em>  custserv@usgs.gov</dt>
+<dt><em>Hours_of_Service:</em>  0800 - 1600 CT, M - F (-6h CST/-5h CDT GMT)</dt>
+<dt><em>Contact_Instructions:</em>  
+<dd>
+
+The USGS point of contact is for questions relating to the data display and download from this web site. For questions relating to content, process of production and quality of the Phenology dataset, refer to the Early Warning / Vegetation Dynamics Team at the USGS EROS, Sioux Falls, SD (605) 594-6003 or jfbrown@usgs.gov.
+
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+<dt><em>Data_Set_Credit:</em>  
+<dd>
+
+U.S. Geological Survey, Earth Resources Observation and Science Center
+
+</dd>
+<dt><em>Security_Information:</em>  
+<dd>
+<dl>
+<dt><em>Security_Classification_System:</em>  None</dt>
+<dt><em>Security_Classification:</em>  Unclassified</dt>
+<dt><em>Security_Handling_Description:</em>  N/A</dt>
+</dl>
+</dd>
+<dt><em>Native_Data_Set_Environment:</em>  
+<dd>
+
+Microsoft Windows 2000 Version 5.2 (Build 3790) Service Pack 2; ESRI ArcCatalog 9.3.1.4000
+
+</dd>
+<dt><em>Cross_Reference:</em>  
+<dd>
+<dl>
+<dt><em>Citation_Information:</em>  </dt>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+
+<a name="2">
+</a>
+<hr/>
+<dl>
+<dt><em>Data_Quality_Information:</em>  
+<dd>
+<dl>
+<dt><em>Attribute_Accuracy:</em>  
+<dd>
+<dl>
+<dt><em>Attribute_Accuracy_Report:</em>  
+<dd>
+
+A formal ground-based validation of phenological metrics data is important in order to evaluate the suitability of using these metrics in various applications.  However, comprehensive ground validation is a challenge.  Existing ground phenology data are not comprehensive; they do not comprehensively document phenological stages for all biomes, vegetation types, and years.  Further, most existing ground observations are based on individual plants or plant species and do not document phenological events as they occur across vegetated canopies at the scales that are observed by broad-scale remotely sensed data.  Another difficulty in evaluating these metrics is determining the appropriate ground-based phenological event they best represent.  For example, ground phenological observations may document plant-specific events such as &quot;first bud&quot;, &quot;first leaf&quot;, and &quot;first flower&quot;, for example.  However, the SOST phenological metric, using the curve derivative approach, might represent leaf expansion in over 25 percent of the vegetated canopy. 
+<br/>
+A few studies have evaluated the curve derivative method used in the processing of the SOST and EOST.  Reed et al. (1994) reported that curve derivative phenological metrics show strong coincidence with expected phenological characteristics for various land cover types.  The metrics were consistent with climatic reports, they illustrated the phenological consistency of corn and soybeans, characterized the phenology of four types of grassland, and established phenological consistency of deciduous and coniferous forests across the conterminous U.S.  Schwartz et al. (2002) stated that the Delayed Moving Average (DMA) method results in early detection of start of season (SOS) because the DMA detected the first sustained flux of greenness rather than the initial leaf expansion of the dominant overstory species.  Schwartz and Crawford (2001) reported that the use of DMA led to a systematic bias toward earlier SOS at higher latitudes due to the ability of northern plant species to initiate growth with less energy.  Cook et al. (2005) reported good agreement (R2 = 0.63) between observed historical NDVI-derived start of season dates compared to dates predicted by hindcasting in a growing degree day climatic model over forested locations in Europe.  
+<br/>
+Most studies conclude that satellite-derived phenological metrics are able to consistently identify a particular time in the time-series vegetation index profile of a pixel that corresponds to the stages of spring greenup and senescence conditions of the mosaic vegetation within that cell.  Validating remote sensed phenological metrics is an active area of research and is being supported by efforts of the U.S. National Phenological Network (<a href="http://www.usanpn.org/">&lt;http://www.usanpn.org/&gt;</a>).  Extensive ground measurements, ground campaigns that are specifically designed for evaluating remote sensing-based phenology, and phenocams (Richardson et al. 2007) will contribute to validation efforts in the future.
+<br/>
+References:
+<br/>
+Reed, B.C., Brown, J.F., VanderZee, D., Loveland, T.R., Merchant, J.W. and Ohlen, D.O., 1994. Measuring phenological variability from satellite imagery, Journal of Vegetation Science, 5:703-714. 
+<br/>
+Cook, B.I., Smith, T.M., and M.E. Mann, 2005. The North Atlantic Oscillation and Regional Phenology prediction over Europe, Global Change Biology, 11(6):919-926.
+<br/>
+Richardson, A.D., J.P. Jenkins, B.H. Braswell, D.Y. Hollinger, S.V. Ollinger, and M-L. Smith 2007.  Use of digital webcam images to track spring green-up in a deciduous broadleaf forest.  Oecologia, 152:  323-334.
+<br/>
+Schwartz, M.D., and T.M. Crawford, 2001. Detecting energy balance modifications at the onset of spring, Physical Geography, 5, 394-409.
+ 
+Schwartz, M.D., B.C. Reed, and M.A.White, 2002, Assessing satellite-derived start-of-season measures in the conterminous USA, International Journal of Climatology, 22, 1793-1805.
+
+</dd>
+<dt><em>Quantitative_Attribute_Accuracy_Assessment:</em>  
+<dd>
+<dl>
+<dt><em>Attribute_Accuracy_Explanation:</em>  
+<dd>
+
+A formal and comprehensive accuracy assessment of these AVHRR NDVI-based phenological metrics has yet to be conducted.
+
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+<dt><em>Positional_Accuracy:</em>  
+<dd>
+<dl>
+<dt><em>Horizontal_Positional_Accuracy:</em>  
+<dd>
+<dl>
+<dt><em>Horizontal_Positional_Accuracy_Report:</em>  N/A</dt>
+</dl>
+</dd>
+<dt><em>Vertical_Positional_Accuracy:</em>  
+<dd>
+<dl>
+<dt><em>Vertical_Positional_Accuracy_Report:</em>  N/A</dt>
+</dl>
+</dd>
+</dl>
+</dd>
+<dt><em>Lineage:</em>  
+<dd>
+<dl>
+<dt><em>Source_Information:</em>  
+<dd>
+<dl>
+<dt><em>Source_Citation:</em>  
+<dd>
+<dl>
+<dt><em>Citation_Information:</em>  
+<dd>
+<dl>
+<dt><em>Title:</em>  
+<dd>
+
+The actual dates of AVHRR NDVI composite that were used to derive 2013 TIN are listed below.
+
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+<dt><em>Source_Citation_Abbreviation:</em>  Band, Startdate  Enddate, StartDOYEndDOY, Remarks</dt>
+<dt><em>Source_Contribution:</em>  
+<dd>
+
+1			1-Jan				14-Jan				001014	
+2			15-Jan				28-Jan				015028		
+3			29-Jan				11-Feb				029042		
+4			12-Feb				25-Feb				043056		
+5			26-Feb				11-Mar				057070		
+6			12-Mar				25-Mar				071084		
+7			26-Mar				8-Apr				085098		
+8			9-Apr				22-Apr				099112		
+9			23-Apr				6-May				113126		
+10			7-May				20-May				127140		
+11			21-May				3-Jun				141154		
+12			4-Jun				17-Jun				155168		
+13			18-Jun				1-Jul				169182		
+14			2-Jul				15-Jul				183196		
+15			16-Jul				29-Jul				197210		
+16			30-Jul				12-Aug				211224		
+17			13-Aug				26-Aug				225238		
+18			27-Aug				9-Sep				239252		
+19			10-Sep				23-Sep				253266		
+20			24-Sep				7-Oct				267280		
+21			8-Oct				21-Oct				281294		
+22			22-Oct				4-Nov				295308		
+23			5-Nov				18-Nov				309322		
+24			19-Nov				2-Dec				323336		
+25			3-Dec				16-Dec				337350		
+26			17-Dec				30-Dec				351364
+
+</dd>
+</dl>
+</dd>
+<dt><em>Process_Step:</em>  
+<dd>
+<dl>
+<dt><em>Process_Description:</em>  
+<dd>
+
+Time Integrated NDVI (TIN): The TIN metric identifies the seasonal net accumulation of photosynthetic activity above the non-growing season baseline in the vegetated canopy at each 1-km x 1-km pixel in the image.  The method for TIN incorporates time-series smoothed NDVI and four other phenological metrics (SOST, SOSN, EOST, and EOSN) Time integrated NDVI is computed by accumulating daily NDVI between SOST and EOST above the baseline indicated by SOST and EOST. The TIN is unitless and valid values range from 1 to 100.  In the TIN data layer, a cell value of 255 represents water bodies and a cell value of 0 represents the area where TIN could not be detected due to insufficient change in time-series NDVI or due to lack of sufficient input data.
+
+</dd>
+<dt><em>Process_Date:</em>  201407</dt>
+<dt><em>Process_Contact:</em>  
+<dd>
+<dl>
+<dt><em>Contact_Information:</em>  
+<dd>
+<dl>
+<dt><em>Contact_Organization_Primary:</em>  
+<dd>
+<dl>
+<dt><em>Contact_Organization:</em>  U.S. Geological Survey</dt>
+<dt><em>Contact_Person:</em>  Early Warning / Vegetation Dynamics Team</dt>
+</dl>
+</dd>
+<dt><em>Contact_Position:</em>  Geographer</dt>
+<dt><em>Contact_Address:</em>  
+<dd>
+<dl>
+<dt><em>Address_Type:</em>  mailing and physical address</dt>
+<dt><em>Address:</em>  USGS Earth Resources, Observation, &amp; Science Center</dt>
+<dt><em>Address:</em>  47914 252nd Street</dt>
+<dt><em>City:</em>  Sioux Falls</dt>
+<dt><em>State_or_Province:</em>  SD</dt>
+<dt><em>Postal_Code:</em>  57198</dt>
+<dt><em>Country:</em>  USA</dt>
+</dl>
+</dd>
+<dt><em>Contact_Voice_Telephone:</em>  605-594-6003</dt>
+<dt><em>Contact_Facsimile_Telephone:</em>  605-594-6529</dt>
+<dt><em>Contact_Electronic_Mail_Address:</em>  jfbrown@usgs.gov</dt>
+<dt><em>Hours_of_Service:</em>  0800 - 1600 CT, M - F (-6h CST/-5h CDT GMT)</dt>
+<dt><em>Contact_Instructions:</em>  
+<dd>
+
+The USGS point of contact is for questions relating to the data display and download from this web site. For questions relating to content, process of production and quality of the Phenology dataset, refer to Early Warning / Vegetation Dynamics Team at the USGS EROS, Sioux Falls, SD (605) 594-6003 or jfbrown@usgs.gov.
+
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+<dt><em>Cloud_Cover:</em>  0%</dt>
+</dl>
+</dd>
+</dl>
+
+<a name="3">
+</a>
+<hr/>
+<dl>
+<dt><em>Spatial_Data_Organization_Information:</em>  
+<dd>
+<dl>
+<dt><em>Direct_Spatial_Reference_Method:</em>  Raster</dt>
+<dt><em>Raster_Object_Information:</em>  
+<dd>
+<dl>
+<dt><em>Raster_Object_Type:</em>  Grid Cell</dt>
+<dt><em>Row_Count:</em>  2889</dt>
+<dt><em>Column_Count:</em>  4587</dt>
+<dt><em>Vertical_Count:</em>  1</dt>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+
+<a name="4">
+</a>
+<hr/>
+<dl>
+<dt><em>Spatial_Reference_Information:</em>  
+<dd>
+<dl>
+<dt><em>Horizontal_Coordinate_System_Definition:</em>  
+<dd>
+<dl>
+<dt><em>Planar:</em>  
+<dd>
+<dl>
+<dt><em>Map_Projection:</em>  
+<dd>
+<dl>
+<dt><em>Map_Projection_Name:</em>  Lambert Azimuthal Equal Area</dt>
+<dt><em>Lambert_Azimuthal_Equal_Area:</em>  
+<dd>
+<dl>
+<dt><em>Longitude_of_Projection_Center:</em>  -100.000000</dt>
+<dt><em>Latitude_of_Projection_Center:</em>  45.000000</dt>
+<dt><em>False_Easting:</em>  0.000000</dt>
+<dt><em>False_Northing:</em>  0.000000</dt>
+</dl>
+</dd>
+</dl>
+</dd>
+<dt><em>Planar_Coordinate_Information:</em>  
+<dd>
+<dl>
+<dt><em>Planar_Coordinate_Encoding_Method:</em>  row and column</dt>
+<dt><em>Coordinate_Representation:</em>  
+<dd>
+<dl>
+<dt><em>Abscissa_Resolution:</em>  1000.000000</dt>
+<dt><em>Ordinate_Resolution:</em>  1000.000000</dt>
+</dl>
+</dd>
+<dt><em>Planar_Distance_Units:</em>  meters</dt>
+</dl>
+</dd>
+</dl>
+</dd>
+<dt><em>Geodetic_Model:</em>  
+<dd>
+<dl>
+<dt><em>Horizontal_Datum_Name:</em>  D_Sphere_ARC_INFO</dt>
+<dt><em>Ellipsoid_Name:</em>  Sphere_ARC_INFO</dt>
+<dt><em>Semi-major_Axis:</em>  6370997.000000</dt>
+<dt><em>Denominator_of_Flattening_Ratio:</em>  infinity</dt>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+
+<a name="5">
+</a>
+<hr/>
+<dl>
+<dt><em>Entity_and_Attribute_Information:</em>  
+<dd>
+<dl>
+<dt><em>Detailed_Description:</em>  
+<dd>
+<dl>
+<dt><em>Entity_Type:</em>  
+<dd>
+<dl>
+<dt><em>Entity_Type_Label:</em>  tin-2013.vat</dt>
+</dl>
+</dd>
+<dt><em>Attribute:</em>  
+<dd>
+<dl>
+<dt><em>Attribute_Label:</em>  Rowid</dt>
+<dt><em>Attribute_Definition:</em>  Internal feature number.</dt>
+<dt><em>Attribute_Definition_Source:</em>  ESRI</dt>
+<dt><em>Attribute_Domain_Values:</em>  
+<dd>
+<dl>
+<dt><em>Unrepresentable_Domain:</em>  
+<dd>
+
+Sequential unique whole numbers that are automatically generated.
+
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+<dt><em>Attribute:</em>  
+<dd>
+<dl>
+<dt><em>Attribute_Label:</em>  VALUE</dt>
+</dl>
+</dd>
+<dt><em>Attribute:</em>  
+<dd>
+<dl>
+<dt><em>Attribute_Label:</em>  COUNT</dt>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+
+<a name="6">
+</a>
+<hr/>
+<dl>
+<dt><em>Distribution_Information:</em>  
+<dd>
+<dl>
+<dt><em>Distributor:</em>  
+<dd>
+<dl>
+<dt><em>Contact_Information:</em>  
+<dd>
+<dl>
+<dt><em>Contact_Organization_Primary:</em>  
+<dd>
+<dl>
+<dt><em>Contact_Organization:</em>  U.S. Geological Survey</dt>
+<dt><em>Contact_Person:</em>  Customer Services Representative</dt>
+</dl>
+</dd>
+<dt><em>Contact_Position:</em>  Customer Services Representative</dt>
+<dt><em>Contact_Address:</em>  
+<dd>
+<dl>
+<dt><em>Address_Type:</em>  mailing and physical address</dt>
+<dt><em>Address:</em>  USGS Earth Resources, Observation &amp; Science Center</dt>
+<dt><em>Address:</em>  47914 252nd Street</dt>
+<dt><em>City:</em>  Sioux Falls</dt>
+<dt><em>State_or_Province:</em>  SD</dt>
+<dt><em>Postal_Code:</em>  57198-0001</dt>
+<dt><em>Country:</em>  USA</dt>
+</dl>
+</dd>
+<dt><em>Contact_Voice_Telephone:</em>  605/594-6151</dt>
+<dt><em>Contact_TDD/TTY_Telephone:</em>  605/594-6933</dt>
+<dt><em>Contact_Facsimile_Telephone:</em>  605/594-6589</dt>
+<dt><em>Contact_Electronic_Mail_Address:</em>  custserv@usgs.gov</dt>
+<dt><em>Hours_of_Service:</em>  0800 - 1600 CT, M - F (-6h CST/-5h CDT GMT)</dt>
+<dt><em>Contact_Instructions:</em>  
+<dd>
+
+The USGS point of contact is for questions relating to the data display and download from this web site. For questions relating to content, process of production and quality of the Phenology dataset, refer to the Early Warning / Vegetation Dynamics Team at the USGS EROS, Sioux Falls, SD (605) 594-6003 or jfbrown@usgs.gov.
+
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+<dt><em>Resource_Description:</em>  Downloadable Data</dt>
+<dt><em>Distribution_Liability:</em>  
+<dd>
+
+Although these data have been processed successfully on a computer system at the USGS, no warranty expressed or implied is made by the USGS regarding the use of the data on any other system, nor does the act of distribution constitute any such warranty.  Data may have been compiled from various outside sources.  Spatial information may not meet National Map Accuracy Standards.  This information may be updated without notification. The USGS shall not be liable for any activity involving these data, installation, fitness of the data for a particular purpose, its use, or analyses results.
+
+</dd>
+<dt><em>Standard_Order_Process:</em>  
+<dd>
+<dl>
+<dt><em>Digital_Form:</em>  
+<dd>
+<dl>
+<dt><em>Digital_Transfer_Information:</em>  
+<dd>
+<dl>
+<dt><em>Format_Name:</em>  Standard ENVI Format</dt>
+<dt><em>Format_Version_Number:</em>  ENVI 4.3</dt>
+<dt><em>Format_Specification:</em>  BSQ, GRID, and/or TIFF</dt>
+<dt><em>Transfer_Size:</em>  10.320</dt>
+</dl>
+</dd>
+<dt><em>Digital_Transfer_Option:</em>  
+<dd>
+<dl>
+<dt><em>Online_Option:</em>  
+<dd>
+<dl>
+<dt><em>Computer_Contact_Information:</em>  
+<dd>
+<dl>
+<dt><em>Network_Address:</em>  
+<dd>
+<dl>
+<dt><em>Network_Resource_Name:</em>  USGS EROS Early Warning and Environmental Monitoring Program</dt>
+</dl>
+</dd>
+</dl>
+</dd>
+<dt><em>Access_Instructions:</em>  
+<dd>
+
+Phenology data are available through the USGS Remote Sensing Phenology (<a href="http://phenology.cr.usgs.gov/get_data_main.php">&lt;http://phenology.cr.usgs.gov/get_data_main.php&gt;</a>) and USGS EarthExplorer (<a href="http://earthexplorer.usgs.gov/">&lt;http://earthexplorer.usgs.gov/&gt;</a>) websites. The data are downloaded in a zip file that contains the necessary files for the respective format. The <a href="http://phenology.cr.usgs.gov/get_data_main.php">&lt;http://phenology.cr.usgs.gov/get_data_main.php&gt;</a> interface offers quick and easy downloads by clicking on a file name. The <a href="http://earthexplorer.usgs.gov/">&lt;http://earthexplorer.usgs.gov/&gt;</a> site is a more interactive interface that offers browse images and additional options for modifying search criteria
+
+</dd>
+<dt><em>Online_Computer_and_Operating_System:</em>  <a href="http://phenology.cr.usgs.gov">&lt;http://phenology.cr.usgs.gov&gt;</a></dt>
+</dl>
+</dd>
+<dt><em>Online_Option:</em>  
+<dd>
+<dl>
+<dt><em>Online_Computer_and_Operating_System:</em>  <a href="http://earthexplorer.usgs.gov">&lt;http://earthexplorer.usgs.gov&gt;</a></dt>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+<dt><em>Fees:</em>  None</dt>
+<dt><em>Turnaround:</em>  Variable</dt>
+</dl>
+</dd>
+<dt><em>Custom_Order_Process:</em>  None</dt>
+<dt><em>Technical_Prerequisites:</em>  
+<dd>
+
+ENVI or equivalent raster data processing software, ESRI ArcMap Suite and/or Arc/Info software and supporting operating systems.
+
+</dd>
+<dt><em>Available_Time_Period:</em>  
+<dd>
+<dl>
+<dt><em>Time_Period_Information:</em>  
+<dd>
+<dl>
+<dt><em>Range_of_Dates/Times:</em>  
+<dd>
+<dl>
+<dt><em>Beginning_Date:</em>  1989</dt>
+<dt><em>Ending_Date:</em>  Present date</dt>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+
+<a name="7">
+</a>
+<hr/>
+<dl>
+<dt><em>Metadata_Reference_Information:</em>  
+<dd>
+<dl>
+<dt><em>Metadata_Date:</em>  20140710</dt>
+<dt><em>Metadata_Review_Date:</em>  As Needed</dt>
+<dt><em>Metadata_Contact:</em>  
+<dd>
+<dl>
+<dt><em>Contact_Information:</em>  
+<dd>
+<dl>
+<dt><em>Contact_Organization_Primary:</em>  
+<dd>
+<dl>
+<dt><em>Contact_Organization:</em>  U.S. Geological Survey</dt>
+<dt><em>Contact_Person:</em>  Customer Services Representative</dt>
+</dl>
+</dd>
+<dt><em>Contact_Position:</em>  Customer Services Representative</dt>
+<dt><em>Contact_Address:</em>  
+<dd>
+<dl>
+<dt><em>Address_Type:</em>  mailing and physical address</dt>
+<dt><em>Address:</em>  USGS Earth Resources, Observation, &amp; Science Center</dt>
+<dt><em>Address:</em>  47914 252nd Street</dt>
+<dt><em>City:</em>  Sioux Falls</dt>
+<dt><em>State_or_Province:</em>  SD</dt>
+<dt><em>Postal_Code:</em>  57198-0001</dt>
+<dt><em>Country:</em>  USA</dt>
+</dl>
+</dd>
+<dt><em>Contact_Voice_Telephone:</em>  605/594-6151</dt>
+<dt><em>Contact_TDD/TTY_Telephone:</em>  605/594-6933</dt>
+<dt><em>Contact_Facsimile_Telephone:</em>  605/594-6589</dt>
+<dt><em>Contact_Electronic_Mail_Address:</em>  custserv@usgs.gov</dt>
+<dt><em>Hours_of_Service:</em>  0800 - 1600 CT, M - F (-6h CST/-5h CDT GMT)</dt>
+</dl>
+</dd>
+</dl>
+</dd>
+<dt><em>Metadata_Standard_Name:</em>  FGDC Content Standards for Digital Geospatial Metadata</dt>
+<dt><em>Metadata_Standard_Version:</em>  FGDC-STD-001-1998</dt>
+<dt><em>Metadata_Time_Convention:</em>  local time</dt>
+<dt><em>Metadata_Access_Constraints:</em>  None</dt>
+<dt><em>Metadata_Use_Constraints:</em>  None</dt>
+<dt><em>Metadata_Extensions:</em>  
+<dd>
+<dl>
+<dt><em>Online_Linkage:</em>  <a href="http://www.esri.com/metadata/esriprof80.html">&lt;http://www.esri.com/metadata/esriprof80.html&gt;</a></dt>
+<dt><em>Profile_Name:</em>  ESRI Metadata Profile</dt>
+</dl>
+</dd>
+<dt><em>Metadata_Extensions:</em>  
+<dd>
+<dl>
+<dt><em>Online_Linkage:</em>  <a href="http://www.esri.com/metadata/esriprof80.html">&lt;http://www.esri.com/metadata/esriprof80.html&gt;</a></dt>
+<dt><em>Profile_Name:</em>  ESRI Metadata Profile</dt>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+
+<hr/>
+Generated by <a href="http://geology.usgs.gov/tools/metadata/tools/doc/mp.html"><tt>mp</tt></a> version 2.9.6 on Thu Mar 05 10:01:46 2015<br/>
+
+</body>
+</html>
