@@ -23,16 +23,19 @@ _more to join_
   * Manipulating NetCDF files with xarray
   * Plotting maps using cartopy
 * __Week 6 (Feb. 20, 2019) WEDNESDAY__
-  * Reading in satellite data (HDF, GRIB, GeoTIFF)
   * Shape files and data projections
 * __Week 7 (Feb. 25, 2019)__
-  * Fourier analysis, power spectra, EOFs(?)
-  * Potentially:  bandpass filtering
+  * Reading in satellite data (HDF, GRIB, GeoTIFF)
+  * EOF analysis (part 1)
+* __Week 8 (Mar. 4, 2019)__
+  * EOF analysis (part 2)
 
 __MARCH/LATER:__
+* Fourier analysis, power spectra
+* Potentially:  bandpass filtering
 * Extreme value theory/calculating return periods
 * Parallel loops
-* Machine learning (?)
+* Machine learning
 * UVCDAT with Python 3
 * Visualizing scientific data (smart color maps, best practices)
 * Figshare/GitHub/transparent data analysis and publications
