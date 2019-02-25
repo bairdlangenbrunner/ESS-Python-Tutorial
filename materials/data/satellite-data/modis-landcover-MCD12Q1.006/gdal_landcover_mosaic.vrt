@@ -5,7 +5,7 @@
     <NoDataValue>255</NoDataValue>
     <ColorInterp>Gray</ColorInterp>
     <ComplexSource>
-      <SourceFilename relativeToVRT="0">HDF4_EOS:EOS_GRID:"/Users/baird/Downloads/MCD12Q1.006/MCD12Q1.A2001001.h27v08.006.2018053224933.hdf":MCD12Q1:LC_Type1</SourceFilename>
+      <SourceFilename relativeToVRT="0">HDF4_EOS:EOS_GRID:"../data/satellite-data/modis-landcover-MCD12Q1.006/MCD12Q1.A2001001.h27v08.006.2018053224933.hdf":MCD12Q1:LC_Type1</SourceFilename>
       <SourceBand>1</SourceBand>
       <SourceProperties RasterXSize="2400" RasterYSize="2400" DataType="Byte" BlockXSize="2400" BlockYSize="416" />
       <SrcRect xOff="0" yOff="0" xSize="2400" ySize="2400" />
@@ -13,7 +13,7 @@
       <NODATA>255</NODATA>
     </ComplexSource>
     <ComplexSource>
-      <SourceFilename relativeToVRT="0">HDF4_EOS:EOS_GRID:"/Users/baird/Downloads/MCD12Q1.006/MCD12Q1.A2001001.h27v09.006.2018053230014.hdf":MCD12Q1:LC_Type1</SourceFilename>
+      <SourceFilename relativeToVRT="0">HDF4_EOS:EOS_GRID:"../data/satellite-data/modis-landcover-MCD12Q1.006/MCD12Q1.A2001001.h27v09.006.2018053230014.hdf":MCD12Q1:LC_Type1</SourceFilename>
       <SourceBand>1</SourceBand>
       <SourceProperties RasterXSize="2400" RasterYSize="2400" DataType="Byte" BlockXSize="2400" BlockYSize="416" />
       <SrcRect xOff="0" yOff="0" xSize="2400" ySize="2400" />
@@ -21,7 +21,7 @@
       <NODATA>255</NODATA>
     </ComplexSource>
     <ComplexSource>
-      <SourceFilename relativeToVRT="0">HDF4_EOS:EOS_GRID:"/Users/baird/Downloads/MCD12Q1.006/MCD12Q1.A2001001.h27v10.006.2018053225904.hdf":MCD12Q1:LC_Type1</SourceFilename>
+      <SourceFilename relativeToVRT="0">HDF4_EOS:EOS_GRID:"../data/satellite-data/modis-landcover-MCD12Q1.006/MCD12Q1.A2001001.h27v10.006.2018053225904.hdf":MCD12Q1:LC_Type1</SourceFilename>
       <SourceBand>1</SourceBand>
       <SourceProperties RasterXSize="2400" RasterYSize="2400" DataType="Byte" BlockXSize="2400" BlockYSize="416" />
       <SrcRect xOff="0" yOff="0" xSize="2400" ySize="2400" />
@@ -29,7 +29,7 @@
       <NODATA>255</NODATA>
     </ComplexSource>
     <ComplexSource>
-      <SourceFilename relativeToVRT="0">HDF4_EOS:EOS_GRID:"/Users/baird/Downloads/MCD12Q1.006/MCD12Q1.A2001001.h28v08.006.2018053232525.hdf":MCD12Q1:LC_Type1</SourceFilename>
+      <SourceFilename relativeToVRT="0">HDF4_EOS:EOS_GRID:"../data/satellite-data/modis-landcover-MCD12Q1.006/MCD12Q1.A2001001.h28v08.006.2018053232525.hdf":MCD12Q1:LC_Type1</SourceFilename>
       <SourceBand>1</SourceBand>
       <SourceProperties RasterXSize="2400" RasterYSize="2400" DataType="Byte" BlockXSize="2400" BlockYSize="416" />
       <SrcRect xOff="0" yOff="0" xSize="2400" ySize="2400" />
@@ -37,7 +37,7 @@
       <NODATA>255</NODATA>
     </ComplexSource>
     <ComplexSource>
-      <SourceFilename relativeToVRT="0">HDF4_EOS:EOS_GRID:"/Users/baird/Downloads/MCD12Q1.006/MCD12Q1.A2001001.h28v09.006.2018053232500.hdf":MCD12Q1:LC_Type1</SourceFilename>
+      <SourceFilename relativeToVRT="0">HDF4_EOS:EOS_GRID:"../data/satellite-data/modis-landcover-MCD12Q1.006/MCD12Q1.A2001001.h28v09.006.2018053232500.hdf":MCD12Q1:LC_Type1</SourceFilename>
       <SourceBand>1</SourceBand>
       <SourceProperties RasterXSize="2400" RasterYSize="2400" DataType="Byte" BlockXSize="2400" BlockYSize="416" />
       <SrcRect xOff="0" yOff="0" xSize="2400" ySize="2400" />
@@ -45,7 +45,7 @@
       <NODATA>255</NODATA>
     </ComplexSource>
     <ComplexSource>
-      <SourceFilename relativeToVRT="0">HDF4_EOS:EOS_GRID:"/Users/baird/Downloads/MCD12Q1.006/MCD12Q1.A2001001.h28v10.006.2018053232813.hdf":MCD12Q1:LC_Type1</SourceFilename>
+      <SourceFilename relativeToVRT="0">HDF4_EOS:EOS_GRID:"../data/satellite-data/modis-landcover-MCD12Q1.006/MCD12Q1.A2001001.h28v10.006.2018053232813.hdf":MCD12Q1:LC_Type1</SourceFilename>
       <SourceBand>1</SourceBand>
       <SourceProperties RasterXSize="2400" RasterYSize="2400" DataType="Byte" BlockXSize="2400" BlockYSize="416" />
       <SrcRect xOff="0" yOff="0" xSize="2400" ySize="2400" />
@@ -53,7 +53,7 @@
       <NODATA>255</NODATA>
     </ComplexSource>
     <ComplexSource>
-      <SourceFilename relativeToVRT="0">HDF4_EOS:EOS_GRID:"/Users/baird/Downloads/MCD12Q1.006/MCD12Q1.A2001001.h29v08.006.2018054000010.hdf":MCD12Q1:LC_Type1</SourceFilename>
+      <SourceFilename relativeToVRT="0">HDF4_EOS:EOS_GRID:"../data/satellite-data/modis-landcover-MCD12Q1.006/MCD12Q1.A2001001.h29v08.006.2018054000010.hdf":MCD12Q1:LC_Type1</SourceFilename>
       <SourceBand>1</SourceBand>
       <SourceProperties RasterXSize="2400" RasterYSize="2400" DataType="Byte" BlockXSize="2400" BlockYSize="416" />
       <SrcRect xOff="0" yOff="0" xSize="2400" ySize="2400" />
@@ -61,7 +61,7 @@
       <NODATA>255</NODATA>
     </ComplexSource>
     <ComplexSource>
-      <SourceFilename relativeToVRT="0">HDF4_EOS:EOS_GRID:"/Users/baird/Downloads/MCD12Q1.006/MCD12Q1.A2001001.h29v09.006.2018054000114.hdf":MCD12Q1:LC_Type1</SourceFilename>
+      <SourceFilename relativeToVRT="0">HDF4_EOS:EOS_GRID:"../data/satellite-data/modis-landcover-MCD12Q1.006/MCD12Q1.A2001001.h29v09.006.2018054000114.hdf":MCD12Q1:LC_Type1</SourceFilename>
       <SourceBand>1</SourceBand>
       <SourceProperties RasterXSize="2400" RasterYSize="2400" DataType="Byte" BlockXSize="2400" BlockYSize="416" />
       <SrcRect xOff="0" yOff="0" xSize="2400" ySize="2400" />
@@ -69,7 +69,7 @@
       <NODATA>255</NODATA>
     </ComplexSource>
     <ComplexSource>
-      <SourceFilename relativeToVRT="0">HDF4_EOS:EOS_GRID:"/Users/baird/Downloads/MCD12Q1.006/MCD12Q1.A2001001.h29v10.006.2018054000142.hdf":MCD12Q1:LC_Type1</SourceFilename>
+      <SourceFilename relativeToVRT="0">HDF4_EOS:EOS_GRID:"../data/satellite-data/modis-landcover-MCD12Q1.006/MCD12Q1.A2001001.h29v10.006.2018054000142.hdf":MCD12Q1:LC_Type1</SourceFilename>
       <SourceBand>1</SourceBand>
       <SourceProperties RasterXSize="2400" RasterYSize="2400" DataType="Byte" BlockXSize="2400" BlockYSize="416" />
       <SrcRect xOff="0" yOff="0" xSize="2400" ySize="2400" />
@@ -77,7 +77,7 @@
       <NODATA>255</NODATA>
     </ComplexSource>
     <ComplexSource>
-      <SourceFilename relativeToVRT="0">HDF4_EOS:EOS_GRID:"/Users/baird/Downloads/MCD12Q1.006/MCD12Q1.A2001001.h30v08.006.2018054000410.hdf":MCD12Q1:LC_Type1</SourceFilename>
+      <SourceFilename relativeToVRT="0">HDF4_EOS:EOS_GRID:"../data/satellite-data/modis-landcover-MCD12Q1.006/MCD12Q1.A2001001.h30v08.006.2018054000410.hdf":MCD12Q1:LC_Type1</SourceFilename>
       <SourceBand>1</SourceBand>
       <SourceProperties RasterXSize="2400" RasterYSize="2400" DataType="Byte" BlockXSize="2400" BlockYSize="416" />
       <SrcRect xOff="0" yOff="0" xSize="2400" ySize="2400" />
@@ -85,7 +85,7 @@
       <NODATA>255</NODATA>
     </ComplexSource>
     <ComplexSource>
-      <SourceFilename relativeToVRT="0">HDF4_EOS:EOS_GRID:"/Users/baird/Downloads/MCD12Q1.006/MCD12Q1.A2001001.h30v09.006.2018054000412.hdf":MCD12Q1:LC_Type1</SourceFilename>
+      <SourceFilename relativeToVRT="0">HDF4_EOS:EOS_GRID:"../data/satellite-data/modis-landcover-MCD12Q1.006/MCD12Q1.A2001001.h30v09.006.2018054000412.hdf":MCD12Q1:LC_Type1</SourceFilename>
       <SourceBand>1</SourceBand>
       <SourceProperties RasterXSize="2400" RasterYSize="2400" DataType="Byte" BlockXSize="2400" BlockYSize="416" />
       <SrcRect xOff="0" yOff="0" xSize="2400" ySize="2400" />
@@ -93,7 +93,7 @@
       <NODATA>255</NODATA>
     </ComplexSource>
     <ComplexSource>
-      <SourceFilename relativeToVRT="0">HDF4_EOS:EOS_GRID:"/Users/baird/Downloads/MCD12Q1.006/MCD12Q1.A2001001.h30v10.006.2018054000515.hdf":MCD12Q1:LC_Type1</SourceFilename>
+      <SourceFilename relativeToVRT="0">HDF4_EOS:EOS_GRID:"../data/satellite-data/modis-landcover-MCD12Q1.006/MCD12Q1.A2001001.h30v10.006.2018054000515.hdf":MCD12Q1:LC_Type1</SourceFilename>
       <SourceBand>1</SourceBand>
       <SourceProperties RasterXSize="2400" RasterYSize="2400" DataType="Byte" BlockXSize="2400" BlockYSize="416" />
       <SrcRect xOff="0" yOff="0" xSize="2400" ySize="2400" />
@@ -101,7 +101,7 @@
       <NODATA>255</NODATA>
     </ComplexSource>
     <ComplexSource>
-      <SourceFilename relativeToVRT="0">HDF4_EOS:EOS_GRID:"/Users/baird/Downloads/MCD12Q1.006/MCD12Q1.A2001001.h31v08.006.2018054000742.hdf":MCD12Q1:LC_Type1</SourceFilename>
+      <SourceFilename relativeToVRT="0">HDF4_EOS:EOS_GRID:"../data/satellite-data/modis-landcover-MCD12Q1.006/MCD12Q1.A2001001.h31v08.006.2018054000742.hdf":MCD12Q1:LC_Type1</SourceFilename>
       <SourceBand>1</SourceBand>
       <SourceProperties RasterXSize="2400" RasterYSize="2400" DataType="Byte" BlockXSize="2400" BlockYSize="416" />
       <SrcRect xOff="0" yOff="0" xSize="2400" ySize="2400" />
@@ -109,7 +109,7 @@
       <NODATA>255</NODATA>
     </ComplexSource>
     <ComplexSource>
-      <SourceFilename relativeToVRT="0">HDF4_EOS:EOS_GRID:"/Users/baird/Downloads/MCD12Q1.006/MCD12Q1.A2001001.h31v09.006.2018054000825.hdf":MCD12Q1:LC_Type1</SourceFilename>
+      <SourceFilename relativeToVRT="0">HDF4_EOS:EOS_GRID:"../data/satellite-data/modis-landcover-MCD12Q1.006/MCD12Q1.A2001001.h31v09.006.2018054000825.hdf":MCD12Q1:LC_Type1</SourceFilename>
       <SourceBand>1</SourceBand>
       <SourceProperties RasterXSize="2400" RasterYSize="2400" DataType="Byte" BlockXSize="2400" BlockYSize="416" />
       <SrcRect xOff="0" yOff="0" xSize="2400" ySize="2400" />
@@ -117,7 +117,7 @@
       <NODATA>255</NODATA>
     </ComplexSource>
     <ComplexSource>
-      <SourceFilename relativeToVRT="0">HDF4_EOS:EOS_GRID:"/Users/baird/Downloads/MCD12Q1.006/MCD12Q1.A2001001.h31v10.006.2018054000804.hdf":MCD12Q1:LC_Type1</SourceFilename>
+      <SourceFilename relativeToVRT="0">HDF4_EOS:EOS_GRID:"../data/satellite-data/modis-landcover-MCD12Q1.006/MCD12Q1.A2001001.h31v10.006.2018054000804.hdf":MCD12Q1:LC_Type1</SourceFilename>
       <SourceBand>1</SourceBand>
       <SourceProperties RasterXSize="2400" RasterYSize="2400" DataType="Byte" BlockXSize="2400" BlockYSize="416" />
       <SrcRect xOff="0" yOff="0" xSize="2400" ySize="2400" />
@@ -125,7 +125,7 @@
       <NODATA>255</NODATA>
     </ComplexSource>
     <ComplexSource>
-      <SourceFilename relativeToVRT="0">HDF4_EOS:EOS_GRID:"/Users/baird/Downloads/MCD12Q1.006/MCD12Q1.A2001001.h32v08.006.2018054001011.hdf":MCD12Q1:LC_Type1</SourceFilename>
+      <SourceFilename relativeToVRT="0">HDF4_EOS:EOS_GRID:"../data/satellite-data/modis-landcover-MCD12Q1.006/MCD12Q1.A2001001.h32v08.006.2018054001011.hdf":MCD12Q1:LC_Type1</SourceFilename>
       <SourceBand>1</SourceBand>
       <SourceProperties RasterXSize="2400" RasterYSize="2400" DataType="Byte" BlockXSize="2400" BlockYSize="416" />
       <SrcRect xOff="0" yOff="0" xSize="2400" ySize="2400" />
@@ -133,7 +133,7 @@
       <NODATA>255</NODATA>
     </ComplexSource>
     <ComplexSource>
-      <SourceFilename relativeToVRT="0">HDF4_EOS:EOS_GRID:"/Users/baird/Downloads/MCD12Q1.006/MCD12Q1.A2001001.h32v09.006.2018054001332.hdf":MCD12Q1:LC_Type1</SourceFilename>
+      <SourceFilename relativeToVRT="0">HDF4_EOS:EOS_GRID:"../data/satellite-data/modis-landcover-MCD12Q1.006/MCD12Q1.A2001001.h32v09.006.2018054001332.hdf":MCD12Q1:LC_Type1</SourceFilename>
       <SourceBand>1</SourceBand>
       <SourceProperties RasterXSize="2400" RasterYSize="2400" DataType="Byte" BlockXSize="2400" BlockYSize="416" />
       <SrcRect xOff="0" yOff="0" xSize="2400" ySize="2400" />
@@ -141,7 +141,7 @@
       <NODATA>255</NODATA>
     </ComplexSource>
     <ComplexSource>
-      <SourceFilename relativeToVRT="0">HDF4_EOS:EOS_GRID:"/Users/baird/Downloads/MCD12Q1.006/MCD12Q1.A2001001.h32v10.006.2018054001355.hdf":MCD12Q1:LC_Type1</SourceFilename>
+      <SourceFilename relativeToVRT="0">HDF4_EOS:EOS_GRID:"../data/satellite-data/modis-landcover-MCD12Q1.006/MCD12Q1.A2001001.h32v10.006.2018054001355.hdf":MCD12Q1:LC_Type1</SourceFilename>
       <SourceBand>1</SourceBand>
       <SourceProperties RasterXSize="2400" RasterYSize="2400" DataType="Byte" BlockXSize="2400" BlockYSize="416" />
       <SrcRect xOff="0" yOff="0" xSize="2400" ySize="2400" />
